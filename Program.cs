@@ -7,4 +7,11 @@ string[] ArrayItog = new string[ArrayFirst.Length];
 int MaxStringLength = 3;
 
 for (int count = 0; count < ArrayFirst.Length; count++)
-{}
+{
+    if (ArrayFirst[count].Length <= MaxStringLength)
+    {
+        ArrayItog[count] = ArrayFirst[count];
+    }
+    else ArrayItog[count] = "";
+    Console.Write($"{ArrayItog[count]} ");
+}
